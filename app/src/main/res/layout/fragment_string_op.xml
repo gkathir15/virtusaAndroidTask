@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StringOpFragment">
+
+
+
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ip1"
+          android:layout_margin="8dp"
+          android:layout_alignParentTop="true"
+          android:autofillHints="Input 1"
+         />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/ip2"
+          android:layout_margin="8dp"
+          android:layout_below="@id/ip1"
+          android:autofillHints="input 2"
+           />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:layout_centerInParent="true"
+        android:text="@string/enter_values_to_compute"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_below="@id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        tools:text="Result"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result2"
+        android:layout_below="@id/result"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="24dp"
+        tools:text="Result"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_text"
+        android:padding="16dp"
+       android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:text="@string/clear_text"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>
